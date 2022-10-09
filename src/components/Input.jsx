@@ -1,10 +1,10 @@
 import "../css/Input.css";
 
-export default function Input() {
+export default function Input({ colorValue, setColorValue }) {
   return (
     <>
       <div className="container">
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <label
             htmlFor="htmlInput"
             className="sr-only"
