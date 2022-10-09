@@ -12,13 +12,15 @@ export default function Input({ colorValue, setColorValue }) {
             Enter a HTML colour name:
           </label>
           <input
+            autoFocus
             type="text"
             name="htmlInput"
             id="htmlInput"
             className="html-input"
             placeholder="Enter a HTML colour name..."
-            autoFocus
             required
+            value={colorValue}
+            onChange={(e) => setColorValue(e.target.value)}
           />
         </form>
       </div>
