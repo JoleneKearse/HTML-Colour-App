@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.display {
+  margin-top: 2em;
+  border: .5rem solid var(--clr-neutral-900);
+  /* border: .5rem dashed var(--clr-neutral-100); */
+}
+
+.display {
+  border-radius: 3.5rem;
+}
+img {
+  border-radius: 3rem;
+}

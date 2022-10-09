@@ -1,0 +1,30 @@
+header {
+  padding: 1em;
+  text-align: center;
+  background-color: #000000D9;
+  backdrop-filter: blur(10%);
+}
+
+h1,
+p {
+  font-weight: 600;
+}
+
+h1 {
+  color: var(--clr-text-heading);
+}
+
+p {
+  padding: 10rem;
+}
+
+.emphasis {
+  font-weight: 800;
+  background-color: #ba52de;
+  background-image: linear-gradient(45deg #884ee6, #ba52de, #e59dd6);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
