@@ -4,6 +4,8 @@
 }
 
 .display {
+  display: grid;
+  place-items: center;
   width: 300px;
   aspect-ratio: 1;
   margin-top: 2em;
