@@ -9,8 +9,8 @@
   width: 300px;
   aspect-ratio: 1;
   margin-top: 2em;
-  border: .5rem solid var(--clr-neutral-900);
-  /* border: .5rem dashed var(--clr-neutral-100); */
+  border: .5rem solid var(--clr-neutral-100);
+  outline: .5rem solid var(--clr-neutral-900);
 }
 
 .display {

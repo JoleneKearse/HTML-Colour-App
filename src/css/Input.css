@@ -1,0 +1,9 @@
+.html-input {
+  width: 600px;
+  max-width: 90vw;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 2rem;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-text);
+}
