@@ -18,6 +18,15 @@
 .display {
   border-radius: 3.5rem;
 }
+
+.color-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
 img {
   border-radius: 3rem;
 }

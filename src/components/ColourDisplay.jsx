@@ -9,8 +9,10 @@ export default function ColorDisplay({ colorValue, codeValue }) {
           className="display"
           style={{ backgroundColor: colorValue }}
         >
-          <p>{colorValue ? colorValue : <img src={BaseImg} alt="colourful gradients" width={300} height={300} />}</p>
-          <p>{codeValue ? codeValue : null}</p>
+          <div className="color-info">
+            <p>{colorValue ? colorValue : <img src={BaseImg} alt="colourful gradients" width={300} height={300} />}</p>
+            <p>{codeValue ? codeValue : null}</p>
+          </div>
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import "../css/Input.css";
+import colorNames from "colornames";
 
 export default function Input({ colorValue, setColorValue, setCodeValue }) {
   return (
@@ -22,7 +23,7 @@ export default function Input({ colorValue, setColorValue, setCodeValue }) {
             value={colorValue}
             onChange={(e) => {
               setColorValue(e.target.value);
-              setCodeValue()
+              setCodeValue(colorNames(e.target.value));
             }}
           />
         </form>
