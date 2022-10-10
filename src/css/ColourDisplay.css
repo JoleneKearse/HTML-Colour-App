@@ -10,6 +10,8 @@
   aspect-ratio: 1;
   margin-top: 2em;
   border: .5rem solid var(--clr-neutral-100);
+  font-weight: 800;
+  color: var(--clr-neutral-900);
   outline: .5rem solid var(--clr-neutral-900);
 }
 
