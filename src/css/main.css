@@ -41,9 +41,10 @@ html {
 }
 
 body {
-  font-size: clamp(16px, 14.8387rem + 5.1613vw, 20px);
+  font-size: clamp(1rem, 14.8387rem + 5.1613vw, 2rem);
   color: var(--clr-text);
   background-color: var(--clr-neutral-100);
+  color-scheme: light dark;
 }
 
 .container {

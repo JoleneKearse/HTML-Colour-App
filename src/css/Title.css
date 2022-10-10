@@ -19,10 +19,10 @@ p {
 }
 
 .emphasis {
+  font-size: 24px;
   font-weight: 800;
-  background-color: #ba52de;
-  background-image: linear-gradient(45deg #884ee6, #ba52de, #e59dd6);
-  background-size: 100%;
+  background: #ba52de;
+  background-image: linear-gradient(45deg, #e59dd6, #ba52de, #9781e8, #ba52de, #e59dd6);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
