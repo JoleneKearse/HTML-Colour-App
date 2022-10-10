@@ -1,6 +1,6 @@
 import "../css/Input.css";
 
-export default function Input({ colorValue, setColorValue }) {
+export default function Input({ colorValue, setColorValue, setCodeValue }) {
   return (
     <>
       <div className="container">
@@ -20,7 +20,10 @@ export default function Input({ colorValue, setColorValue }) {
             placeholder="Enter a HTML colour name..."
             required
             value={colorValue}
-            onChange={(e) => setColorValue(e.target.value)}
+            onChange={(e) => {
+              setColorValue(e.target.value);
+              setCodeValue()
+            }}
           />
         </form>
       </div>

@@ -18,6 +18,7 @@ export default function App() {
       <Input
         colorValue={colorValue}
         setColorValue={setColorValue}
+        setCodeValue={setCodeValue}
       />
     </>
   )
