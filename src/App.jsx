@@ -6,10 +6,15 @@ import { useState } from "react";
 
 export default function App() {
   const [colorValue, setColorValue] = useState("");
+  const [codeValue, setCodeValue] = useState("");
+
   return (
     <>
       <Title />
-      <ColourDisplay colorValue={colorValue} />
+      <ColourDisplay
+        colorValue={colorValue}
+        codeValue={codeValue}
+      />
       <Input
         colorValue={colorValue}
         setColorValue={setColorValue}
