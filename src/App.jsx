@@ -7,6 +7,8 @@ import { useState } from "react";
 export default function App() {
   const [colorValue, setColorValue] = useState("");
   const [codeValue, setCodeValue] = useState("");
+  const [isDarkText, setIsDarkText] = useState(true);
+  const backgroundShade = isDarkColor(colorValue);
 
   return (
     <>
@@ -14,11 +16,14 @@ export default function App() {
       <ColourDisplay
         colorValue={colorValue}
         codeValue={codeValue}
+        isDarkText={isDarkText}
       />
       <Input
         colorValue={colorValue}
         setColorValue={setColorValue}
         setCodeValue={setCodeValue}
+        isDarkText={isDarkText}
+        setIsDarkText={setIsDarkText}
       />
     </>
   )

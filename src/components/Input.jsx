@@ -1,7 +1,8 @@
 import "../css/Input.css";
 import colorNames from "colornames";
+import isDarkColor from "is-dark-color";
 
-export default function Input({ colorValue, setColorValue, setCodeValue }) {
+export default function Input({ colorValue, setColorValue, setCodeValue, isDarkText, setIsDarkText }) {
   return (
     <>
       <div className="container">
@@ -24,6 +25,7 @@ export default function Input({ colorValue, setColorValue, setCodeValue }) {
             onChange={(e) => {
               setColorValue(e.target.value);
               setCodeValue(colorNames(e.target.value));
+              setIsDarkColor(!isDarkColor);
             }}
           />
         </form>
