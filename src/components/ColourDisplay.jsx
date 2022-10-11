@@ -9,7 +9,7 @@ export default function ColorDisplay({ colorValue, codeValue, isDarkText }) {
           className="display"
           style={{
             backgroundColor: colorValue,
-            color: backgroundShade ? "#000" : "#FFF"
+            color: isDarkText ? "#000" : "#FFF"
           }}
         >
           <div className="color-info">

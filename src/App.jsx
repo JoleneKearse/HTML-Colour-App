@@ -8,7 +8,6 @@ export default function App() {
   const [colorValue, setColorValue] = useState("");
   const [codeValue, setCodeValue] = useState("");
   const [isDarkText, setIsDarkText] = useState(true);
-  const backgroundShade = isDarkColor(colorValue);
 
   return (
     <>

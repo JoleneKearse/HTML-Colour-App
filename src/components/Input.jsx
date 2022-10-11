@@ -25,7 +25,9 @@ export default function Input({ colorValue, setColorValue, setCodeValue, isDarkT
             onChange={(e) => {
               setColorValue(e.target.value);
               setCodeValue(colorNames(e.target.value));
-              setIsDarkColor(!isDarkColor);
+              // TODO: find why get error: Uncaught TypeError: Cannot read properties of null (reading 'r') => maybe because colorValue not yet declared? No it is on line 26-7
+              setIsDarkText(isDarkColor("colorValue") ? isDarkText : !isDarkText);
+              console.log(isDarkText);
             }}
           />
         </form>
