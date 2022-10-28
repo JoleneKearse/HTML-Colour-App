@@ -5,9 +5,9 @@ export default function ColourNames({ Colours }) {
     <>
       <p>Try any of the colour names below.</p>
       <ul>
-        {Colours.map((colour) => (
+        {Colours.map((colour, index) => (
           <li
-            key={colour.id}
+            key={index}
             colour={colour.name}
           >
 
